@@ -3,13 +3,13 @@
 
 /* -----------Variables------------ */
 :root {
-  --main-color: #e02f6b;
+  --main-color: #dc3434;
   --blue: #0000ff;
   --blue-dark: #18293c;
   --orange: #ffa500;
   --green-yellow: #cddc39;
-  --pink-light: #efa2b4;
-  --cyan-light: #aef1ee;
+  --pink-light: #a5bdea;
+  --cyan-light: #aee4ef;
   --white: #ffff;
   --white-alpha-40: rgba(255, 255, 255, 0.40);
   --white-alpha-25: rgba(255, 255, 255, 0.25);
@@ -31,7 +31,10 @@
 
 body {
   min-height: 100vh;
-  background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+  background-image: url(/img/multigradient.jpg);
+  background-size: cover;
+  background-position: bottom;
+  /* background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light)); */
   background-attachment: fixed;
   font-size: 1em;
   font-family: 'Poppins', sans-serif;
