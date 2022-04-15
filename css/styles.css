@@ -265,6 +265,24 @@ button {
   }
 }
 
+@keyframes squareMove {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(250px);
+  }
+  40% {
+    transform: translate(-150px, 250px);
+  }
+  60% {
+    transform: translate(-150px, -150px);
+  }
+  80% {
+    transform: translate(0px, -150px);
+  }
+}
+
 /* ---------- Background Spheres ------------ */
 .bg-circles {
   position: fixed;
@@ -308,6 +326,7 @@ button {
   top: 30%;
   right: -55px;
   opacity: 0.6;
+  animation: squareMove 35s ease-in-out infinite;
 }
 
 .bg-circles .circle-4 {
